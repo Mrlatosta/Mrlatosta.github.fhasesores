@@ -14,9 +14,15 @@
 
     <style>
 
+      #asd{
+        transition-property: all;
+        transition-duration: 0.3s;
+      }
+
+
        #nab .nav-link:hover{
 
-             color: #102945;
+             color: #DCCECE;
              transition: all .5s;
 
     }
@@ -28,6 +34,11 @@
        
 
     }
+
+   /* #prueba{
+      transition-property: background-color;
+        transition-duration: 3s;
+   } */
 
 
 
@@ -47,6 +58,9 @@
         background-size: 100%;
         background-color: transparent;
         background-size: cover;
+
+
+
       }
 
        @media only screen and (max-width: 992px) {
@@ -55,8 +69,8 @@
         align-items: center;
       }
       #imagen{
-        height: 200px;
-         background-position: 0% 0%;
+        height: 150px;
+         background-position: 0% 50%;
       }
 
         #nab .nav-link{
@@ -68,19 +82,21 @@
   }
     </style>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-none fixed-top "> <!--sticky-top o fixed-top -->
-  <div class="container-fluid ">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-none fixed-top" id="asd" > <!--sticky-top o fixed-top -->
+  <div class="container-fluid " >
 
     <a class="navbar-brand" href="#" > </a>
   
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end border" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 
       <div class="navbar-nav me-md-5 p-md-3 text-center" id="nab" style="font-family: fuente1;">
 
-        <a class="nav-link active" aria-current="page" href="#" style="border: solid; border-width: 1.5px;">Home</a>
+        <a class="nav-link active" aria-current="page" href="#" style="border: solid; border-width: 1.3px;">Home</a>
         <a class="nav-link active" aria-current="page" href="#">Personas</a>
         <a class="nav-link active" aria-current="page" href="#">Negocio</a>
         <a class="nav-link active" aria-current="page" href="#">Contacto</a>
@@ -96,6 +112,29 @@
 
 </div>
 
+
+<button id="prueba">Haz clic en mi</button>
+
+
+
+    <div class="container border mt-5">
+      <div class="row">
+        <div class="col-12">  <h1>Hello, world!</h1></div>
+        <div class="col-12">  <h1>Hello, world!</h1></div>
+      </div>
+    </div>
+    <div class="container border mt-5">
+      <div class="row">
+        <div class="col-12">  <h1>Hello, world!</h1></div>
+        <div class="col-12">  <h1>Hello, world!</h1></div>
+      </div>
+    </div>
+    <div class="container border mt-5">
+      <div class="row">
+        <div class="col-12 col-md-6">  <h1>Hello, world!</h1></div>
+        <div class="col-12 col-md-6">  <h1>Hello, world!</h1></div>
+      </div>
+    </div>
     <div class="container border mt-5">
       <div class="row">
         <div class="col-12 col-md-6">  <h1>Hello, world!</h1></div>
@@ -106,7 +145,49 @@
 
 
   
+<script type="text/javascript">
 
+
+  const asd = document.getElementById('asd')
+
+ // $(window).scroll(function() {        
+  //   asd.onclick = function() {
+   // this.style.height = '50px';
+ // };
+
+//});
+  
+
+window.onscroll = function (event) {
+      // Then here (inside the anonymous function that's being passed in), we add the class
+      // "my-class" to the document body.
+      var y = window.scrollY;
+      console.log(y);
+
+      //asd.style.height = 50px;
+
+      if(y>=90){
+        asd.style.height= '60px';
+        asd.style.backgroundColor= 'rgba(0,0,0,0.9)';
+        asd.style.opacity = ''
+         //asd.classList.remove("bg-none")
+         //asd.classList.add("bg-dark");
+       }else{
+        asd.style.height= '90px';
+       asd.style.backgroundColor= 'transparent';
+       asd.style.opacity = '3'
+        //asd.classList.add("bg-none");
+        //asd.classList.remove("bg-dark");
+       }
+     
+
+      //document.body.classList.add("my-class");
+
+    }
+
+    
+
+</script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
