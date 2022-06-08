@@ -49,6 +49,13 @@
 
       }
 
+      @font-face{
+
+        font-family: fuente2;
+        src: url("Nunito-Light.ttf");
+
+      }
+
       #nabmovil{
         align-items: center;
         text-decoration: none;
@@ -86,6 +93,7 @@
        @media only screen and (max-width: 992px) {
   
       #nab{
+
         align-items: center;
       }
       #imagen{
@@ -115,12 +123,12 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 
-      <div class="navbar-nav me-md-5 p-md-3 text-center" id="nab" style="font-family: fuente1;">
+      <div class="navbar-nav me-md-5 p-md-3 text-center" id="nab" style="font-family: fuente2; font-size: .9rem;">
 
-        <a class="nav-link active" aria-current="page" href="#" style="border: solid; border-width: 1.3px;">Home</a>
-        <a class="nav-link active" aria-current="page" href="#">Personas</a>
-        <a class="nav-link active" aria-current="page" href="#">Negocio</a>
-        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+        <a class="nav-link active" aria-current="page" href="#" style="border: solid; border-width: 1.3px;">HOME</a>
+        <a class="nav-link active" aria-current="page" href="#">PERSONAS</a>
+        <a class="nav-link active" aria-current="page" href="#">NEGOCIO</a>
+        <a class="nav-link active" aria-current="page" href="#">CONTACTO</a>
 
       </div>
 
@@ -133,16 +141,16 @@
     <h5 id="offcanvasTopLabel"></h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class=" text-center" id="nabmovil" style="font-family: fuente1;">
+  <div class=" text-center" id="nabmovil" style="font-family: fuente2; font-size: .9rem;">
     
     
       
 
 
-        <a class="nav-link active" aria-current="page" href="#" style="background: #F4EEEE; ">Home</a>
-        <a class="nav-link active" id="nabotro" aria-current="page" href="#">Personas</a>
-        <a class="nav-link active" id="nabotro" aria-current="page" href="#">Negocio</a>
-        <a class="nav-link active" id="nabotro" aria-current="page" href="#">Contacto</a>
+        <a class="nav-link active" aria-current="page" href="#" style="background: #F4EEEE; ">HOME</a>
+        <a class="nav-link active" id="nabotro" aria-current="page" href="#">PERSONAS</a>
+        <a class="nav-link active" id="nabotro" aria-current="page" href="#">NEGOCIO</a>
+        <a class="nav-link active" id="nabotro" aria-current="page" href="#">CONTACTO</a>
 
   
 
@@ -273,7 +281,7 @@ window.onscroll = function (event) {
 
       if(y>=90){
         asd.style.height= '60px';
-        asd.style.backgroundColor= 'rgba(16,41,69,0.9)';
+        asd.style.backgroundColor= 'rgba(0,0,0,0.9)';
         asd.style.opacity = ''
         //'rgba(16,41,69,0.9)'
          //asd.classList.remove("bg-none")
