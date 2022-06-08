@@ -49,6 +49,26 @@
 
       }
 
+      #nabmovil{
+        align-items: center;
+        text-decoration: none;
+      }
+
+       #nabmovil .nav-link{
+        color: black;
+       
+        text-decoration: none;
+      }
+
+      #nabmovil .nav-link:hover{
+        background: #F7F2F2;
+        color: #DDD1D1;
+        transition: background;
+        transition-duration: 300ms;
+        
+      }
+
+
       #imagen{
         height: 500px;
         vertical-align: middle;
@@ -89,9 +109,10 @@
 
     <a class="navbar-brand" href="#" > </a>
   
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 
       <div class="navbar-nav me-md-5 p-md-3 text-center" id="nab" style="font-family: fuente1;">
@@ -106,6 +127,30 @@
     </div>
   </div>
 </nav>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 100%;">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasTopLabel"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class=" text-center" id="nabmovil" style="font-family: fuente1;">
+    
+    
+      
+
+
+        <a class="nav-link active" aria-current="page" href="#" style="background: #F4EEEE; ">Home</a>
+        <a class="nav-link active" id="nabotro" aria-current="page" href="#">Personas</a>
+        <a class="nav-link active" id="nabotro" aria-current="page" href="#">Negocio</a>
+        <a class="nav-link active" id="nabotro" aria-current="page" href="#">Contacto</a>
+
+  
+
+
+
+  </div>
+
+</div>
 
 <div id="imagen">
   
@@ -165,7 +210,7 @@
         <div class="col-12 col-md-6">  <h1>Hello, world!</h1></div>
       </div>
     </div>
-    
+
     <div class="container border mt-5">
       <div class="row">
         <div class="col-12">  <h1>Hello, world!</h1></div>
